@@ -2,10 +2,6 @@
 
 This project features a Neural Network trained on the famous MNIST dataset to recognize handwritten digits, combined with a custom graphical user interface (GUI) for live testing.
 
-## 🎬 Demo
-
-![Digit Recognition Demo](gifs/digit-recognition-demo.gif)
-
 ## Features
 * **Neural Network:** Built with Keras (Sequential API) using Dense layers and the Adam optimizer.
 * **Live Drawing GUI:** A Tkinter-based interface allowing users to draw digits with their mouse on a digital canvas.
@@ -32,12 +28,6 @@ Once the model file is generated, you can launch the drawing interface to test t
 python "interface IA.py"
 ```
 
-### 4. (Optional) Generate Demo GIF
-To create a demonstration GIF of the interface:
-```bash
-python generate_demo_gif.py
-```
-
 ## How it Works
 1. **Drawing:** Draw any digit from 0 to 9 on the canvas.
 2. **Prediction:** Click **"Deviner"** (Guess) to let the AI process the image (resizing it to 28x28 pixels and inverting colors to match the training data) and output its guess in the terminal.
@@ -60,9 +50,7 @@ python generate_demo_gif.py
 digit-recognition-ia/
 ├── réseau neuronal from scratch.py    # Training script
 ├── interface IA.py                     # GUI application
-├── generate_demo_gif.py                # GIF generation script
 ├── mon_modele_ia.keras                 # Trained model (generated after training)
-├── gifs/                               # Generated demo GIFs
 └── README.md
 ```
 
